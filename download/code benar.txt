@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Aplikasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span class="back-arrow" onclick="goBack()">&#9668;</span>
+        <h3>DOWNLOADER APK</h3>
+    </header>
+    <main>
+        <div class="app-card">
+            <img src="img/logo.png" alt="App Icon" class="app-icon">
+            <div class="app-details">
+                <h2>DikaRiza Market</h2>
+                <p class="app-version">Versi : 1.1</p>
+                <p>Kami memahami betapa pentingnya kenyamanan dan kecepatan dalam bertransaksi di era digital ini. Oleh karena itu, kami telah mengembangkan aplikasi yang dirancang khusus untuk memenuhi semua kebutuhan Anda dalam hal top-up dan transaksi. Dengan aplikasi ini, Anda tidak hanya mendapatkan kemudahan, tetapi juga keamanan dan efisiensi dalam setiap langkah. Berikut adalah beberapa alasan mengapa Anda harus segera mengunduh aplikasi kami</p>
+                <a href="" class="download-button">Download APK</a>
+                <a href="https://saweria.co/DikaRiza" class="donate-button">Donasi</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 DikaRiza Market. All rights reserved.</p>
+    </footer>
+    <script src="topup1.js"></script>
+</body>
+</html>
+
+ini code lengkap saya

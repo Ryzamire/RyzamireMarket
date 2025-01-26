@@ -1,0 +1,135 @@
+/* Reset margin dan padding default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; 
+  margin: 0;
+  padding: 0;
+  background-color: #999; 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: #444;
+  color: #ffffff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.navbar h1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  text-align: center;
+  flex-grow: 1; 
+}
+
+.logo {
+  width: 40px; 
+  height: 40px; 
+  margin-left: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px); 
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.illustration {
+  margin: 20px 0;
+  width: 100%; 
+  max-width: 250px; 
+}
+
+.illustration img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+}
+
+.message {
+  text-align: center;
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.message p {
+  margin: 0 0 10px;
+}
+
+.button {
+  background-color: #444;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 600; 
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #00695c;
+}
+
+/* Media Query untuk layar lebih kecil seperti ponsel */
+@media only screen and (max-width: 600px) {
+  .container {
+      margin: 10px;
+      padding: 15px;
+  }
+
+  .navbar h1 {
+      font-size: 1rem; 
+  }
+
+  .button {
+      font-size: 1rem;
+      padding: 10px 20px; 
+  }
+}
+
+/* Media Query untuk layar lebih besar seperti desktop */
+@media only screen and (min-width: 768px) {
+  .container {
+      width: 60%; 
+      margin: 40px auto;
+  }
+
+  .button {
+      font-size: 1.2rem;
+      padding: 20px 40px; 
+  }
+}
+
+/* Media Query untuk layar lebih besar dari 1200px */
+@media only screen and (min-width: 1200px) {
+  .container {
+      width: 40%; 
+  }
+}

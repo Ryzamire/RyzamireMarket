@@ -1,0 +1,149 @@
+/* Reset margin dan padding */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Main content styling */
+main {
+  height: calc(100vh - 80px); /* 100% tinggi viewport - tinggi header dan footer */
+  overflow-y: auto; /* Biarkan konten dapat digulir jika lebih panjang dari ukuran layar */
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling untuk ulasan */
+.review-item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Styling untuk form ulasan */
+.review-form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.review-form h2 {
+  margin-top: 0;
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.review-form input[type="text"],
+.review-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.review-form .rating {
+  margin-bottom: 10px;
+}
+
+.review-form .rating .star {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s; /* Efek transisi yang halus */
+}
+
+.star:hover {
+  color: gold; /* Warna bintang saat dihover */
+  transform: scale(1.2); /* Bintang sedikit membesar saat dihover */
+}
+
+.star.selected {
+  color: gold; /* Warna bintang yang dipilih */
+}
+
+.review-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.review-form button:hover {
+  background-color: #555;
+}
+
+/* Styling untuk modal */
+.modal {
+  display: none; /* Defaultnya tersembunyi */
+  position: fixed;
+  z-index: 1; /* Di atas semua konten */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); /* Warna latar belakang */
+  background-color: rgba(0,0,0,0.4); /* Latar belakang semi transparan */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-arrow {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}

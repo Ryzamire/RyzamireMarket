@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .back-arrow {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.faq-container {
+    max-width: 700px;
+    margin: 1px auto;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Menengahkan teks FAQ */
+}
+
+.faq-title {
+    margin-bottom: 20px; /* Menambahkan spasi antara judul dan pertanyaan */
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.question {
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 18px;
+}
+
+.answer {
+    color: #666;
+    margin-top: 5px;
+    display: none;
+}
+
+.faq-item.active {
+    background-color: #f2f2f2;
+}

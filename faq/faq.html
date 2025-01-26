@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="faq.css">
+    <title>DIKARIZA MARKET</title>
+</head>
+<body>
+    <header>
+        <span class="back-arrow" onclick="goBack()">&#9668;</span>
+        <h1>FAQ</h1>
+    </header>
+
+    <div class="faq-container">
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <h2 class="question">Q: Bagaimana cara melakukan pembelian?<span class="arrow">&#9660;</span></h2>
+            <p class="answer">A: Langkah awal pilih produk yang anda inginkan lalu isi formulir data dari produk tersebut jangan sampai anda mengkosongkan salah satu kolom,setelah mengisi formulir produk lalu klik button order nanti kalilan akan diarahkan ke whatsapp untuk melakukan pembayaran dengan admin.</p>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <h2 class="question">Q: Bagaimana bila produk sedang dalam gangguan?<span class="arrow">&#9660;</span></h2>
+            <p class="answer">A: Produk yang anda inginkan sedang gangguan? tunggu informasi dari admin ya.</p>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <h2 class="question">Q: Bila produk tidak masuk atau kesalahan produk?<span class="arrow">&#9660;</span></h2>
+            <p class="answer">A: Bila saat pembelian produk atau produk anda bermasalah silahkan hubungi admin melalui contact cs yang tersedia di website berikan keterangan produk serta bukti transaksi ya!.</p>
+        </div>
+        <!-- Tambahkan lebih banyak pertanyaan dan jawaban sesuai kebutuhan -->
+
+    </div>
+
+    <script src="faq.js"></script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
