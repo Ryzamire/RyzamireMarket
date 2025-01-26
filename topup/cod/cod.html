@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMAT TOPUP</title>
+  <link rel="stylesheet" href="cod.css">
+</head>
+<body>
+
+  <header>
+    <span class="back-arrow" onclick="goBack()">&#9668;</span>
+    <h3>FORMAT TOPUP</h3>
+</header>
+
+
+
+  <section>
+    <form id="orderForm">
+   
+        <img src="img/logo.png" alt="DikaRiza" width="100" height="100">
+   
+
+      <div id="warningMessage" class="hidden">
+        <p>Silakan lengkapi semua data sebelum melakukan pemesanan.</p>
+        <button type="button" onclick="hideWarning()">Tutup</button>
+      </div>
+
+      <label for="gameName">Nama Game:</label>
+      <input type="text" id="gameName" name="gameName" value="CALL OF DUTY" readonly>
+
+      <label for="gameID">Masukan ID Game:</label>
+      <input type="number" id="gameID" name="gameID" placeholder="Contoh: 123456789">
+
+      <label for="nick">Masukan Nickname Anda :</label>
+      <input type="text" id="nick" name="nick" placeholder="Masukan Nickname Disini" required>
+
+      <label for="priceList">Price List Topup :</label>
+      <select id="priceList" name="priceList" required>
+        <option value="" disabled selected>Silahkan Pilih</option>
+        <option value="31 CP : Rp.5.500">31 CP : Rp.5.500</option>
+        <option value="62 CP : Rp.10.500">62 CP : Rp.10.500</option>
+        <option value="127 CP : Rp.20.500">127 CP : Rp.20.500</option>
+        <option value="317 CP : Rp.45.500">317 CP : Rp.45.500</option>
+        <option value="634 CP : Rp.94.500">634 CP : Rp.94.500</option>
+        <option value="1373 CP : Rp.189.500">1373 CP : Rp.189.500</option>
+        <option value="2059 CP : Rp.285.000">2059 CP : Rp.285.000</option>
+      </select>
+
+      <label for="paymentList">Pilih Metode Pembayaran:</label>
+      <select id="paymentList" name="paymentList" required>
+        <option value="" disabled selected>Pilihan Payment</option>
+        <option value="Gopay">Gopay</option>
+        <option value="Dana">Dana</option>
+        <option value="Qris All Payment">Qris All Payment</option>
+      </select>
+
+      <button type="button" onclick="placeOrder()">Order Now</button>
+    </form>
+  </section>
+
+  <script src="cod.js"></script>
+
+</body>
+</html>

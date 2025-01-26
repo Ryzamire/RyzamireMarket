@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMAT TOPUP</title>
+  <link rel="stylesheet" href="epep.css">
+</head>
+<body>
+
+  <header>
+    <span class="back-arrow" onclick="goBack()">&#9668;</span>
+    <h3>FORMAT TOPUP</h3>
+</header>
+
+
+
+  <section>
+    <form id="orderForm">
+   
+        <img src="img/logo.png" alt="DikaRiza" width="100" height="100">
+   
+
+      <div id="warningMessage" class="hidden">
+        <p>Silakan lengkapi semua data sebelum melakukan pemesanan.</p>
+        <button type="button" onclick="hideWarning()">Tutup</button>
+      </div>
+
+      <label for="gameName">Nama Game:</label>
+      <input type="text" id="gameName" name="gameName" value="FREE FIRE" readonly>
+
+      <label for="gameID">Masukan ID Game:</label>
+      <input type="number" id="gameID" name="gameID" placeholder="Contoh: 123456789">
+
+      <label for="nick">Masukan Nickname Anda :</label>
+      <input type="text" id="nick" name="nick" placeholder="Masukan Nickname Disini" required>
+
+      <label for="priceList">Price List Topup :</label>
+      <select id="priceList" name="priceList" required>
+        <option value="" disabled selected>Silahkan Pilih</option>
+        <option value="Membership Mingguan : Rp.28.500">Membership Mingguan : Rp.28.500</option>
+        <option value="Membership Bulanan : Rp.84.000">Membership Bulanan : Rp.84.000</option>
+        <option value="Membership Level Up Pass : Rp.18.000">Membership Level Up Pass : Rp.18.000</option>
+        <option value="50 Diamond : Rp.7.000">50 Diamond : Rp.7.000</option>
+        <option value="70 Diamond : Rp.9.500">70 Diamond : Rp.9.500</option>
+        <option value="100 Diamond : Rp.14.000">100 Diamond : Rp.14.000 </option>
+        <option value="140 Diamond : Rp.19.000">140 Diamond : Rp.19.000</option>
+        <option value="210 Diamond : Rp.27.500">210 Diamond : Rp.27.500</option>
+        <option value="355 Diamond : Rp.46.000">355 Diamond : Rp.46.000</option>
+        <option value="500 Diamond : Rp.66.000">500 Diamond : Rp.66.000</option>
+        <option value="720 Diamond : Rp.93.000">720 Diamond : Rp.93.000</option>
+        <option value="1000 Diamond : Rp.145.000">1000 Diamond : Rp.145.000</option>
+        <option value="1450 Diamond : Rp.190.000">1450 Diamond : Rp.190.000</option>
+        <option value="2180 Diamond : Rp.290.000">355 Diamond : Rp.46.000</option>
+        <option value="3640 Diamond : Rp.490.000">3640 Diamond : Rp.490.000</option>
+      </select>
+
+      <label for="paymentList">Pilih Metode Pembayaran:</label>
+      <select id="paymentList" name="paymentList" required>
+        <option value="" disabled selected>Pilihan Payment</option>
+        <option value="Gopay">Gopay</option>
+        <option value="Dana">Dana</option>
+        <option value="Qris All Payment">Qris All Payment</option>
+      </select>
+
+      <button type="button" onclick="placeOrder()">Order Now</button>
+    </form>
+  </section>
+
+  <script src="epep.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMAT TOPUP</title>
+  <link rel="stylesheet" href="pubg.css">
+</head>
+<body>
+
+  <header>
+    <span class="back-arrow" onclick="goBack()">&#9668;</span>
+    <h3>FORMAT TOPUP</h3>
+</header>
+
+
+
+  <section>
+    <form id="orderForm">
+   
+        <img src="img/logo.png" alt="DikaRiza" width="100" height="100">
+   
+
+      <div id="warningMessage" class="hidden">
+        <p>Silakan lengkapi semua data sebelum melakukan pemesanan.</p>
+        <button type="button" onclick="hideWarning()">Tutup</button>
+      </div>
+
+      <label for="gameName">Nama Game:</label>
+      <input type="text" id="gameName" name="gameName" value="PUBG MOBILE" readonly>
+
+      <label for="gameID">Masukan ID Game:</label>
+      <input type="number" id="gameID" name="gameID" placeholder="Contoh: 123456789">
+
+      <label for="nick">Masukan Nickname Anda :</label>
+      <input type="text" id="nick" name="nick" placeholder="Masukan Nickname Disini" required>
+
+      <label for="priceList">Price List Topup :</label>
+      <select id="priceList" name="priceList" required>
+        <option value="" disabled selected>Silahkan Pilih</option>
+        <option value="50 UC : Rp.12.000">50 UC : Rp.12.000</option>
+        <option value="150 UC : Rp.33.000">150 UC : Rp.33.000</option>
+        <option value="250 UC : Rp.49.000">250 UC : Rp.49.000</option>
+        <option value="350 UC : Rp.66.000">350 UC : Rp.66.000</option>
+        <option value="500UC : Rp.96.200">500UC : Rp.96.200</option>
+        <option value="700 UC : Rp.142.500">700 UC : Rp.142.500</option>
+        <option value="1000 UC : Rp.210.500">1000 UC : Rp.210.500</option>
+        <option value="1500 UC : Rp.340.500">1500 UC : Rp.340.500</option>
+        <option value="2500 UC : Rp.483.500">2500 UC : Rp.483.500</option>
+      </select>
+      
+      <label for="paymentList">Pilih Metode Pembayaran:</label>
+      <select id="paymentList" name="paymentList" required>
+        <option value="" disabled selected>Pilihan Payment</option>
+        <option value="Gopay">Gopay</option>
+        <option value="Dana">Dana</option>
+        <option value="Qris All Payment">Qris All Payment</option>
+      </select>
+
+      <button type="button" onclick="placeOrder()">Order Now</button>
+    </form>
+  </section>
+
+  <script src="pubg.js"></script>
+
+</body>
+</html>

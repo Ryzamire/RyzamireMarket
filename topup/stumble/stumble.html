@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMAT TOPUP</title>
+  <link rel="stylesheet" href="stumble.css">
+</head>
+<body>
+
+  <header>
+    <span class="back-arrow" onclick="goBack()">&#9668;</span>
+    <h3>FORMAT TOPUP</h3>
+</header>
+
+
+
+  <section>
+    <form id="orderForm">
+   
+        <img src="img/logo.png" alt="DikaRiza" width="100" height="100">
+   
+
+      <div id="warningMessage" class="hidden">
+        <p>Silakan lengkapi semua data sebelum melakukan pemesanan.</p>
+        <button type="button" onclick="hideWarning()">Tutup</button>
+      </div>
+
+      <label for="gameName">Nama Game:</label>
+      <input type="text" id="gameName" name="gameName" value="STUMBLE GUYS" readonly>
+
+      <label for="gameID">Masukan ID Game:</label>
+      <input type="number" id="gameID" name="gameID" placeholder="Contoh: 123456789">
+
+      <label for="nick">Masukan Nickname Anda :</label>
+      <input type="text" id="nick" name="nick" placeholder="Masukan Nickname Disini" required>
+
+      <label for="priceList">Price List Topup :</label>
+      <select id="priceList" name="priceList" required>
+        <option value="" disabled selected>Silahkan Pilih</option>
+        <option value="1.300 Tokens : Rp.256.500">1.300 Tokens : Rp.256.500</option>
+        <option value="120 Tokens : Rp.32.500">120 Tokens : Rp.32.500</option>
+        <option value="800 Gems : Rp.25.000">800 Gems : Rp.25.000</option>
+        <option value="1.600 Gems & 75 Tokens : Rp.43.000">1.600 Gems & 75 Tokens : Rp.43.000</option>
+        <option value="5.000 Gems & 275 Tokens : Rp.105.500">5.000 Gems & 275 Tokens : Rp.105.500</option>
+      </select>
+
+      <label for="paymentList">Pilih Metode Pembayaran:</label>
+      <select id="paymentList" name="paymentList" required>
+        <option value="" disabled selected>Pilihan Payment</option>
+        <option value="Gopay">Gopay</option>
+        <option value="Dana">Dana</option>
+        <option value="Qris All Payment">Qris All Payment</option>
+      </select>
+
+      <button type="button" onclick="placeOrder()">Order Now</button>
+    </form>
+  </section>
+
+  <script src="stumble.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMAT TOPUP</title>
+  <link rel="stylesheet" href="sta.css">
+</head>
+<body>
+
+  <header>
+    <span class="back-arrow" onclick="goBack()">&#9668;</span>
+    <h3>FORMAT TOPUP</h3>
+</header>
+
+
+
+  <section>
+    <form id="orderForm">
+   
+        <img src="img/logo.png" alt="DikaRiza" width="100" height="100">
+   
+
+      <div id="warningMessage" class="hidden">
+        <p>Silakan lengkapi semua data sebelum melakukan pemesanan.</p>
+        <button type="button" onclick="hideWarning()">Tutup</button>
+      </div>
+
+      <label for="gameName">Nama Aplikasi:</label>
+      <input type="text" id="gameName" name="gameName" value="PLAYSTATION" readonly>
+
+      <label for="gameID">Masukan ID Acount:</label>
+      <input type="number" id="gameID" name="gameID" placeholder="Contoh: 123456789">
+
+      <label for="nick">Masukan Username Anda :</label>
+      <input type="text" id="nick" name="nick" placeholder="Masukan Username Disini" required>
+
+      <label for="priceList">Price List Topup :</label>
+      <select id="priceList" name="priceList" required>
+        <option value="" disabled selected>Silahkan Pilih</option>
+        <option value="600.000 PSN Card IDR : Rp.599.300">600.000 PSN Card IDR : Rp.599.300</option>
+        <option value="300.000 PSN Card IDR : Rp.306.100">300.000 PSN Card IDR : Rp.306.100</option>
+        <option value="12 Bulan Membership : Rp.622.000">12 Bulan Membership : Rp.622.000</option>
+        <option value="3 Bulan Membership : Rp.255.000">3 Bulan Membership : Rp.255.000</option>
+      </select>
+
+      <label for="paymentList">Pilih Metode Pembayaran:</label>
+      <select id="paymentList" name="paymentList" required>
+        <option value="" disabled selected>Pilihan Payment</option>
+        <option value="Gopay">Gopay</option>
+        <option value="Dana">Dana</option>
+        <option value="Qris All Payment">Qris All Payment</option>
+      </select>
+
+      <button type="button" onclick="placeOrder()">Order Now</button>
+    </form>
+  </section>
+
+  <script src="sta.js"></script>
+
+</body>
+</html>
