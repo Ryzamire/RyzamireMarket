@@ -1,0 +1,135 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #333, #ACB6E5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative; /* Stay at the top */
+}
+
+.navbar-button {
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+    color: #fff; /* Original color */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-button:hover {
+    color: #ACB6E5;
+}
+
+.navbar-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff; /* Original color */
+}
+
+#time-remaining {
+    background: #fff;
+    padding: 15px 25px;
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #444; /* Original color */
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative; /* Stay directly below the navbar */
+}
+
+.schedule {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: scroll; /* Enable scrolling within the schedule on mobile */
+    flex-grow: 1; /* Take remaining height */
+    position: relative; /* Stay directly below time-remaining */
+}
+
+.day {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.day-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333; /* Original color */
+}
+
+.time {
+    font-size: 1.1em;
+    color: #555; /* Original color */
+}
+
+.day:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.animation-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .navbar, #time-remaining, .schedule {
+        max-width: 100%;
+    }
+
+    .schedule {
+        overflow-y: auto; /* Ensure scrolling works on mobile */
+    }
+
+    .day {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .day-name {
+        font-size: 1em;
+    }
+
+    .time {
+        font-size: 0.9em;
+    }
+
+    #time-remaining {
+        font-size: 1.1em;
+        padding: 10px 15px;
+    }
+}

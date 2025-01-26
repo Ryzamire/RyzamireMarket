@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMAT TOPUP</title>
+  <link rel="stylesheet" href="th.css">
+</head>
+<body>
+
+  <header>
+    <span class="back-arrow" onclick="goBack()">&#9668;</span>
+    <h3>FORMAT TOPUP</h3>
+</header>
+
+
+
+  <section>
+    <form id="orderForm">
+   
+        <img src="img/logo.png" alt="DikaRiza" width="100" height="100">
+   
+
+      <div id="warningMessage" class="hidden">
+        <p>Silakan lengkapi semua data sebelum melakukan pemesanan.</p>
+        <button type="button" onclick="hideWarning()">Tutup</button>
+      </div>
+
+      <label for="gameName">Sim Perdana :</label>
+      <input type="text" id="gameName" name="gameName" value="THREE" readonly>
+
+      <label for="gameID">Masukan Nomor Anda :</label>
+      <input type="number" id="gameID" name="gameID" placeholder="Contoh: 08442**">
+
+      <label for="priceList">Pulsa Nasional :</label>
+      <select id="priceList" name="priceList" required>
+        <option value="" disabled selected>Silahkan Pilih</option>
+        <option value="Rp 1.000 : Rp1.500">Rp 1.000 : Rp1.500</option>
+        <option value="Rp 2.000 : Rp2.500">Rp 2.000 : Rp2.500</option>
+        <option value="Rp 3.000 : Rp3.500">Rp 3.000 : Rp3.500</option>
+        <option value="Rp 4.000 : Rp4.500">Rp 4.000 : Rp4.500</option>
+        <option value="Rp 5.000 : Rp6.000">Rp 5.000 : Rp6.000</option>
+        <option value="Rp 10.000 : Rp11.000">Rp 35.000 : Rp36.000</option>
+        <option value="Rp 15.000 : Rp16.000">Rp 15.000 : Rp16.000</option>
+        <option value="Rp 20.000 : Rp21.000">Rp 20.000 : Rp21.000</option>
+        <option value="Rp 25.000 : Rp26.000">Rp 25.000 : Rp26.000</option>
+        <option value="Rp 30.000 : Rp31.000">Rp 30.000 : Rp31.000</option>
+        <option value="Rp 40.000 : Rp41.000">Rp 40.000 : Rp41.000</option>
+        <option value="Rp 50.000 : Rp51.000">Rp 50.000 : Rp51.000</option>
+        <option value="Rp 60.000 : Rp61.000">Rp 60.000 : Rp61.000</option>
+        <option value="Rp 70.000 : Rp71.000">Rp 70.000 : Rp71.000</option>
+        <option value="Rp 80.000 : Rp81.000">Rp 80.000 : Rp81.000</option>
+        <option value="Rp 90.000 : Rp91.000">Rp 90.000 : Rp91.000</option>
+        <option value="Rp 100.000 : Rp101.000">Rp 100.000 : Rp101.000</option>
+  
+      </select>
+
+      <label for="paymentList">Pilih Metode Pembayaran:</label>
+      <select id="paymentList" name="paymentList" required>
+        <option value="" disabled selected>Pilihan Payment</option>
+        <option value="Qris All Payment">Qris All Payment</option>
+      </select>
+
+      <button type="button" onclick="placeOrder()">Order Now</button>
+    </form>
+  </section>
+
+  <script src="th.js"></script>
+
+</body>
+</html>

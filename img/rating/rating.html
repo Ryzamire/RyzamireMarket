@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Reviews</title>
+<link rel="stylesheet" href="rating.css">
+</head>
+<body>
+
+  <header>
+    <span class="back-arrow" onclick="goBack()">&#9668;</span>
+    <h3>FORMAT RATING</h3>
+</header>
+
+<main>
+  <!-- Form ulasan -->
+  <div id="review-form-container">
+    <div class="review-form">
+      <h2>Rating Customer</h2>
+      <form id="review-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="transaction-id">Transaction ID:</label>
+        <input type="text" id="transaction-id" name="transaction-id" required><br>
+
+        <label for="user-review">Ulasan:</label>
+        <textarea id="user-review" name="user-review" rows="4" cols="50" required></textarea><br>
+
+        <div class="rating">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
+        </div>
+
+        <button type="button" id="submit-review">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="reviews-list">
+    <!-- Daftar ulasan akan ditambahkan di sini -->
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2024 DikaRiza Market</p>
+</footer>
+
+<!-- Modal untuk peringatan -->
+<div id="alert-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <p id="modal-message"></p>
+  </div>
+</div>
+
+<script src="rating.js"></script>
+</body>
+</html>

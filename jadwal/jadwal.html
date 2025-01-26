@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Jadwal Jam Kerja</title>
+    <link rel="stylesheet" href="jadwal.css">
+  </head>
+<body>
+  <div class="navbar">
+    <button class="navbar-button" onclick="goBack()">&#9664;</button>
+    <span class="navbar-text">JAM KERJA</span>
+  </div>
+
+  <div id="time-remaining">Memuat informasi waktu...</div>
+
+  <div class="schedule">
+    <div class="day animation-item" data-day="kamis" data-start="09:00" data-end="23:00">
+      <div class="day-name">KAMIS</div>
+      <div class="time">09:00 - 23:00</div>
+    </div>
+    <div class="day animation-item" data-day="jumat" data-start="09:00" data-end="23:00">
+      <div class="day-name">JUMAT</div>
+      <div class="time">09:00 - 23:00</div>
+    </div>
+    <div class="day animation-item" data-day="sabtu" data-start="07:00" data-end="00:00">
+      <div class="day-name">SABTU</div>
+      <div class="time">09:00 - 23:00</div>
+    </div>
+    <div class="day animation-item" data-day="minggu" data-start="07:00" data-end="00:00">
+      <div class="day-name">MINGGU</div>
+      <div class="time">09:00 - 23:00</div>
+    </div>
+    <div class="day animation-item" data-day="senin" data-start="09:00" data-end="23:00">
+      <div class="day-name">SENIN</div>
+      <div class="time">09:00 - 23:00</div>
+    </div>
+    <div class="day animation-item" data-day="selasa" data-start="09:00" data-end="23:00">
+      <div class="day-name">SELASA</div>
+      <div class="time">09:00 - 23:00</div>
+    </div>
+    <div class="day animation-item" data-day="rabu" data-start="19:00" data-end="23:00">
+      <div class="day-name">RABU</div>
+      <div class="time">19:00 - 23:00</div>
+    </div>
+  </div>
+
+  <script src="jadwal.js"></script>
+  <script>
+    function redirectToGame(gamePage) {
+      window.location.href = gamePage;
+    }
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
